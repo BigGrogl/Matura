@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class junij2016 {
+public class junij16 {
     public static Scanner sc = new Scanner(System.in);
     public static int st;
     public static String[] pokemon= new String[st]; 
@@ -33,5 +33,27 @@ public class junij2016 {
         return pokemonIn.concat("-").concat(tip[i].substring(0,1)).concat("-").concat(value);
     }
 //-------------------------C----------------------------------------
-    
+    public static Double pokemoni (String tipIn){
+        int vsota = 0;
+        int count = 0;
+        for(int i = 0; i < st; i++){
+            if(tipIn.equals(tip[i])){
+                vsota+=moc[i];
+                count++;
+            }
+        }
+        return (double)(vsota/count);
+    }
+//-------------------------Č----------------------------------------
+    public static void najmocnejsiPokemon(){
+        int max = 0;
+        int index = 0;
+        for(int i = 0; i < st; i++){
+            if(moc[i] > max){
+                max = moc[i];
+                index = i;
+            }
+        }
+        System.out.printf("%S",pokemon[index]);
+    }
 }

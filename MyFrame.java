@@ -81,10 +81,10 @@ public class MyFrame extends JFrame implements ActionListener{
             pomlad15.main(null);
         }
         else if(e.getSource()==nal3){
-            pomlad15.main(null);
+            junij16.main(null);
         }
         else if(e.getSource()==nal4){
-            pomlad15.main(null);
+            junij17.main(null);
         }
         else if(e.getSource()==nal5){
             pomlad15.main(null);
